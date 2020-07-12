@@ -1,21 +1,29 @@
-// pages/main/main.js
+// pages/init_p/init_p.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        
-        src:"../../data/changfeng_mass_center.jpg",
-        facility_name:"长丰县文化馆"
+
     },
+
+    btnclick_mass: function () {
+        wx.navigateTo({
+            url: '../main/main',
+        })
+    },
+
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
+        
       
+
     },
+
 
     /**
      * 生命周期函数--监听页面初次渲染完成

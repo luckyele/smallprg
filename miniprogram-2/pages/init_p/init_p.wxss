@@ -1,0 +1,8 @@
+/* pages/init_p/init_p.wxss */
+.button_list{
+    padding: 100px;
+}
+
+.button1 {
+    margin-bottom: 20px;
+}

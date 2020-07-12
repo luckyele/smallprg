@@ -1,14 +1,16 @@
 {
     "pages": [
+        "pages/init_p/init_p",
         "pages/main/main",
         "pages/index/index",
-        "pages/logs/logs"
+        "pages/logs/logs",
+        "pages/list_f/list_f"
         
     ],
     "window": {
         "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#fff",
-        "navigationBarTitleText": "WeChat",
+        "navigationBarTitleText": "公共文化设施手册",
         "navigationBarTextStyle": "black"
     },
     "style": "v2",
