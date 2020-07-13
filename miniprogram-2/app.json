@@ -1,10 +1,10 @@
 {
     "pages": [
         "pages/init_p/init_p",
-        "pages/main/main",
-        "pages/logs/logs",
-        "pages/list_f/list_f"
+        "pages/decribe_page/decribe_page",
+        "pages/list_f/list_f",
         
+        "pages/logs/logs"        
     ],
     "window": {
         "backgroundTextStyle": "light",

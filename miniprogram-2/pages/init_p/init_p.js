@@ -10,7 +10,7 @@ Page({
 
     btnclick_mass: function () {
         wx.navigateTo({
-            url: '../main/main',
+            url: '../decribe_page/decribe_page',
         })
     },
 
