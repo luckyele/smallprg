@@ -2,7 +2,6 @@
     "pages": [
         "pages/init_p/init_p",
         "pages/main/main",
-        "pages/index/index",
         "pages/logs/logs",
         "pages/list_f/list_f"
         
