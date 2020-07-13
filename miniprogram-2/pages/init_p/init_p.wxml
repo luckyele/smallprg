@@ -1,10 +1,8 @@
 <!--pages/init_p/init_p.wxml-->
 
 <view class="button_list">
-
     <button class="button1" bindtap="btnclick_lib"> 公共图书馆</button>
     <button class="button1" bindtap="btnclick_mass">文化馆</button>
     <button class="button1" bindtap="btnclick_msm">博物馆</button>
     <button class="button1" bindtap="btnclick_glr">美术馆</button>
 </view>
-

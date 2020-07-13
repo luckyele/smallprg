@@ -1,1 +1,11 @@
 /* pages/list_f/list_f.wxss */
+.title {
+  font-size:20px;
+  text-align: center;
+}
+
+.list_f {
+  padding: 10px;
+  margin-left: 15px;
+  font-size: 18px;
+}

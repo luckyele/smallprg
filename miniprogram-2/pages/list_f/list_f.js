@@ -1,25 +1,38 @@
 // pages/list_f/list_f.js
+
+    
+
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-
+      facility_names: [
+          {name:'合肥市文化馆',},
+          {name:'合肥市文化馆',},
+          {name:'合肥市文化馆',},
+          {name:'合肥市文化馆',},
+          {name:'合肥市文化馆',}]
+    },
+    gotoinfo:function (){
+        wx.navigateTo({
+          url: '../decribe_page/decribe_page',
+        })
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-
+        console.info(1)
     },
 
     /**
      * 生命周期函数--监听页面初次渲染完成
      */
     onReady: function () {
-
+        
     },
 
     /**

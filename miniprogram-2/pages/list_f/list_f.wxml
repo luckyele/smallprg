@@ -1,2 +1,6 @@
 <!--pages/list_f/list_f.wxml-->
-<text>pages/list_f/list_f.wxml</text>
+<view>
+  
+  <view class="list_f" wx:for="{{facility_names}}" bindtap="gotoinfo">{{item.name}}</view>
+  
+</view>

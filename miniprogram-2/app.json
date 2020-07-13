@@ -1,9 +1,8 @@
 {
     "pages": [
         "pages/init_p/init_p",
+        "pages/list_f/list_f",     
         "pages/decribe_page/decribe_page",
-        "pages/list_f/list_f",
-        
         "pages/logs/logs"        
     ],
     "window": {
