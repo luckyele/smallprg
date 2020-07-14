@@ -7,18 +7,11 @@
 .list_f {
   padding: 10px;
   margin-left: 15px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .city_name{
-  font-size: 20px;
-  
-}
-
-
-.county_name{
-  margin-top: 5px;
-  font-size: 16px;
-  padding-left:10px;
-  height: 24px;
+  box-shadow: grey;
+  font-size: 20px; 
+  background: gray;
 }

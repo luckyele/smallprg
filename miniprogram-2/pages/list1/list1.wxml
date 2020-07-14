@@ -1,0 +1,7 @@
+
+<view class="list">
+<view wx:for="{{[1,2,3]}}" class="list-item">
+  <view class="list-item-left">{{item}}</view>
+  <view class="list-item-right">...</view>
+</view>
+</view>

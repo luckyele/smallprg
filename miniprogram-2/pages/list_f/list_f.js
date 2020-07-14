@@ -53,16 +53,12 @@ Page({
         ],
     
     },
+
     gotoinfo:function (){
         wx.navigateTo({
             url: '../describe_page/describe_page?name='+this.data.cities+'&type='+this.data.type[this.data.typeId-1]
         })
         console.info(this.data.type[this.data.typeId-1])
-        /* this.setData(
-                {isShow:true,}
-            );
- */
-        
     },
 
     /**
