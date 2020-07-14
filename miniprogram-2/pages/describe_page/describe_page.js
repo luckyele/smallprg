@@ -4,17 +4,16 @@ Page({
     /**
      * 页面的初始数据
      */
-    data: {
-        
-        src:"../../data/changfeng_mass_center.jpg",
-        facility_name:"长丰县文化馆"
+    data: {        
+        src:"../../data/lvan_mass_center.jpg",
+        facility_name:"六安市文化馆"
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-      
+        console.info(options.name[0])
     },
 
     /**

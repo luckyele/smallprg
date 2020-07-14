@@ -1,6 +1,8 @@
 /* pages/init_p/init_p.wxss */
 .button_list{
-    padding: 100px;
+    padding: 100px; 
+    background-color: darkcyan;  
+    height:80vh
 }
 
 .button1 {

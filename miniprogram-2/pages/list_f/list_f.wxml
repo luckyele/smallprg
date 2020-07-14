@@ -1,6 +1,12 @@
 <!--pages/list_f/list_f.wxml-->
 <view>
+
+  <view class="list_f" wx:for="{{cities}}" bindtap="gotoinfo">
+    <view class="city_name">{{item.name}}{{type[typeId-1]}}</view>
+    <view class="conuty_content" wx:if="{{isShow}}">
+      <view class="county_name" wx:for="{{item.counties}}" >{{item.name}}</view>
+    </view>  
   
-  <view class="list_f" wx:for="{{facility_names}}" bindtap="gotoinfo">{{item.name}}</view>
+  </view>
   
 </view>

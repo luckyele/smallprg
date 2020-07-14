@@ -5,37 +5,29 @@ Page({
      */
     data: {
         
-    },
-
-    btnclick_mass: function () {
-        let page_num = 2
-        console.info(page_num)
+    },    
+    btnclick_lib: function(){
+        let page_num = 1
         wx.navigateTo({
-            url: '../decribe_page/decribe_page',
+            url: '../list_f/list_f?type=1',
         })
     },
 
-    btnclick_lib: function(){
-        let page_num = 1
-        console.info(page_num)
+    btnclick_mass: function () {
         wx.navigateTo({
-            url: '../list_f/list_f',
+            url: '../list_f/list_f?type=2',
         })
     },
 
     btnclick_msm: function(){
-        let page_num = 3
-        console.info(page_num)
         wx.navigateTo({
-            url: '../list_f/list_f',
+            url: '../list_f/list_f?type=3',
         })
     },
 
     btnclick_glr: function(){
-        let page_num = 4
-        console.info(page_num)
         wx.navigateTo({
-            url: '../list_f/list_f',
+            url: '../list_f/list_f?type=4',
         })
     },
 

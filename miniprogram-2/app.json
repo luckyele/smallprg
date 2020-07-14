@@ -2,7 +2,7 @@
     "pages": [
         "pages/init_p/init_p",
         "pages/list_f/list_f",     
-        "pages/decribe_page/decribe_page",
+        "pages/describe_page/describe_page",
         "pages/logs/logs"        
     ],
     "window": {
