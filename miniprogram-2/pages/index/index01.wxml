@@ -1,0 +1,34 @@
+<!--pages/index/index01.wxml-->
+<view class="tab">
+    <view class="tab-item" bindtap="changeItem" data-item="0">图</view>
+    <view class="tab-item" bindtap="changeItem" data-item="1">文</view> 
+    <view class="tab-item" bindtap="changeItem" data-item="2">博</view> 
+    <view class="tab-item" bindtap="changeItem" data-item="3">美</view>
+</view>
+
+<view class="content">
+    <swiper>　　
+        <swiper-item style="background:#ccc">
+            <scroll-view scroll-y='true' duration='100' class="libs">
+                <view class="libs_item" wx:for="{{libs_id}}" bindtap="goto_detail">{{item.name}}</view>
+            </scroll-view>
+        </swiper-item>　
+        　
+        <swiper-item style="background:#ddd">
+             <scroll-view scroll-y='true' duration='100' class="mass_centers">
+                <view class="mass_centers_item" wx:for="{{mass_centers_id}}">{{item.name}}</view>
+            </scroll-view>
+        </swiper-item>　　
+
+        <swiper-item style="background:#eee">
+              <scroll-view scroll-y='true' duration='100' class="mzms">
+                <view class="mzms_item" wx:for="{{mzms_id}}">{{item.name}}</view>
+            </scroll-view>
+        </swiper-item>
+        <swiper-item style="background:#eee">
+            <view>{{info}}</view>
+        </swiper-item>
+    </swiper>
+</view>
+
+<view class="buttom">2020@X'd</view>

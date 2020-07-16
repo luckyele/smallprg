@@ -1,6 +1,7 @@
 <!--pages/list_f/list_f.wxml-->
-<view>
+<view class="bg_container">
   <view class="list_f" wx:for="{{cities}}" wx:key="index" bindtap="gotoinfo">
     <view hover-class="city_name">{{item.name}}{{type[typeId-1]}}</view>
+    <view class="right-item">></view>
   </view>
 </view>

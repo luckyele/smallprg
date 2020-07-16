@@ -1,17 +1,26 @@
 /* pages/list_f/list_f.wxss */
-.title {
-  font-size:20px;
-  text-align: center;
-}
-
 .list_f {
-  padding: 10px;
-  margin-left: 15px;
-  font-size: 20px;
+  font-size: 16px;
+  background-color:#fff;
+  margin-top: 5px;
+  display: flex;
+  flex:2;
+  height: 32px;
+  padding-top: 15px;
+  padding-left:10px;
+  width:100%
 }
 
-.city_name{
-  box-shadow: grey;
-  font-size: 20px; 
-  background: gray;
+.right-item{
+  color: #999;
+  font-size: 16px;
+}
+.bg_container{
+  background-color: #c9c9c9;
+  height: 720px;
+  padding-top: 5px;
+}
+.city_name{ 
+  width: 100%;
+  background-color: #c9c9c9;
 }

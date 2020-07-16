@@ -1,10 +1,12 @@
 /* pages/init_p/init_p.wxss */
 .button_list{
     padding: 100px; 
-    background-color: darkcyan;  
-    height:80vh
+    
 }
-
 .button1 {
+    color: #636363;
     margin-bottom: 20px;
+    background-color: bisque;
+    
+
 }
