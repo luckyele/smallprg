@@ -96,10 +96,11 @@ Page({
             facitilty_id:this.data.libs_id[e.target.dataset.index].id
         })
         wx.navigateTo({
-          url: '../describe_page/describe_page?id='+this.data.facitilty_id,
-        })
+          url: '../describe_page/describe_page?id='+this.data.facitilty_id
+        }) 
+        
     },
-
+    
     goto_detial_mass: function(e){
         this.setData({
             facitilty_id:this.data.mass_centers_id[e.target.dataset.index].id

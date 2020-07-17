@@ -8,43 +8,33 @@ Page({
         id:'',
         facility_name:'',
         content:'',
-        src:'',
-        detail:
-        [
-            {
-             src:"../../data/lvan_mass_center.jpg",
-             facility_name:"六安市文化馆",
-             content:"六安市文化馆是国家设立的开展公共文化服务的综合性文化事业机构和场所，设计建筑面积约16000㎡，地上四层，地下二层，包括本体和附属剧场两大部分，剧场设计740个座位。有美术展厅、非遗展厅、报告厅、设备用房、功能用房、培训教室等。六安市文化馆以“文化寻根、群众舞台、创作基地、心灵家园”为理念，肩负着全民艺术普及，全市群众文化活动的组织、调研和业务指导，全市群众文艺队伍的辅导和培训，搜集整理民间文化遗产和开展文化理论研究，以及开展文化交流等工作。",
-             id:'03370000',
-            },
-            {
-                src:"../../data/lvan_mass_center.jpg",
-                facility_name:"安徽省图书馆",
-                content:"六安市文化馆是国家设立的开展公共文化服务的综合性文化事业机构和场所，设计建筑面积约16000㎡，地上四层，地下二层，包括本体和附属剧场两大部分，剧场设计740个座位。有美术展厅、非遗展厅、报告厅、设备用房、功能用房、培训教室等。六安市文化馆以“文化寻根、群众舞台、创作基地、心灵家园”为理念，肩负着全民艺术普及，全市群众文化活动的组织、调研和业务指导，全市群众文艺队伍的辅导和培训，搜集整理民间文化遗产和开展文化理论研究，以及开展文化交流等工作。",
-                id:'04410020',
-               },
-        ],
-       /*  list:{src:"../../data/lvan_mass_center.jpg",
-        facility_name:"六安市文化馆",
-        content:"六安市文化馆是国家设立的开展公共文化服务的综合性文化事业机构和场所，设计建筑面积约16000㎡，地上四层，地下二层，包括本体和附属剧场两大部分，剧场设计740个座位。有美术展厅、非遗展厅、报告厅、设备用房、功能用房、培训教室等。六安市文化馆以“文化寻根、群众舞台、创作基地、心灵家园”为理念，肩负着全民艺术普及，全市群众文化活动的组织、调研和业务指导，全市群众文艺队伍的辅导和培训，搜集整理民间文化遗产和开展文化理论研究，以及开展文化交流等工作。", */
-        },
+        src:'',  
+    },
 
     /**
      * 生命周期函数--监听页面加载
      */
-
     onLoad:function (options) {
-        this.data.detail.forEach( item => {
-            if(item.id == options.id){
-                this.setData({
-                    src:item.src,
-                    facility_name:item.facility_name,
-                    content:item.content
-                })
-            }
-        });
+        let that = this;
+        let host = 'http://127.0.0.1:80/';
+        console.info(options.id);
+        wx.request({           
+          url: 'http://127.0.0.1:80/'+options.id+'.json',
+          data:{},
+          method:'GET',
+          success:function(res){
+              console.info(res);
+              that.setData({
+                src : host + res.data.src,
+                facility_name:res.data.facility_name,
+                content:res.data.content
+            }) 
+          },
+          fail:function(){
+              console.info("failure");
+          }
+        })
     },
-
     /**
      * 生命周期函数--监听页面初次渲染完成
      */

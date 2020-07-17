@@ -3,16 +3,12 @@
         "pages/index/index01",
         "pages/describe_page/describe_page",
         "pages/logs/logs" 
-
-
     ],
     "window": {
         "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#fff",
         "navigationBarTitleText": "公共文化设施手册",
         "navigationBarTextStyle": "black"
-
-
     },
     "sitemapLocation": "sitemap.json"
 }
