@@ -1,6 +1,0 @@
-<!--pages/init_p/init_p.wxml-->
-
-<view class="button_list"  >
-    <button class="button1" bindtap="btnclick_lib">分行业浏览</button>   
-    <button class="button1" bindtap="btnclick_glr">分地区浏览</button>
-</view>

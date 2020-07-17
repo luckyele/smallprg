@@ -1,8 +1,6 @@
 {
     "pages": [
         "pages/index/index01",
-        "pages/init_p/init_p",
-        "pages/list_f/list_f",     
         "pages/describe_page/describe_page",
         "pages/logs/logs" 
 
