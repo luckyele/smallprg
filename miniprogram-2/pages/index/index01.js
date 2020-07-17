@@ -21,12 +21,10 @@ Page({
     //      0 :县级代码
     //      2 :等级
     //      0 :序号
-
-
     data: {
-        info:"",
+        facitilty_id:"",
         libs_id: [
-            {name:"安徽省图书馆",id:""},
+            {name:"安徽省图书馆",id:"04410020"},
             {name:"合肥市图书馆",id:""},
             {name:"合肥市少儿图书馆",id:""},
             {name:"淮北市图书馆",id:""},
@@ -59,7 +57,7 @@ Page({
             {name:"蚌埠市文化馆",id:""},
             {name:"阜阳市文化馆",id:""},
             {name:"淮南市文化馆",id:""},
-            {name:"六安市文化馆",id:""},
+            {name:"六安市文化馆",id:"03370000"},
             {name:"滁州市文化馆",id:""},
             {name:"马鞍山市文化馆",id:""},
             {name:"芜湖市文化馆",id:""},
@@ -88,15 +86,46 @@ Page({
             {name:"安庆市博物馆",id:""},
             {name:"中国徽州文化博物馆",id:""},
         ],
+        glrs_id:[
+            {name:"安徽省美术馆", id:""},
+            {name:"合肥市美术馆", id:""},
+        ],
     },
-    goto_detail: function(e){
-        wx.navigateTo({
-          url: '../describe_page/describe_page',
+    goto_detial_lib: function(e){
+        this.setData({
+            facitilty_id:this.data.libs_id[e.target.dataset.index].id
         })
-
+        wx.navigateTo({
+          url: '../describe_page/describe_page?id='+this.data.facitilty_id,
+        })
     },
 
+    goto_detial_mass: function(e){
+        this.setData({
+            facitilty_id:this.data.mass_centers_id[e.target.dataset.index].id
+        })
+        wx.navigateTo({
+          url: '../describe_page/describe_page?id='+this.data.facitilty_id,
+        })
+    },
    
+    goto_detial_mzm: function(e){
+        this.setData({
+            facitilty_id:this.data.mzms_id[e.target.dataset.index].id
+        })
+        wx.navigateTo({
+          url: '../describe_page/describe_page?id='+this.data.facitilty_id,
+        })
+    },
+
+    goto_detial_glr: function(e){
+        this.setData({
+            facitilty_id:this.data.glrs_id[e.target.dataset.index].id
+        })
+        wx.navigateTo({
+          url: '../describe_page/describe_page?id='+this.data.facitilty_id,
+        })
+    },
     /**
      * 生命周期函数--监听页面加载
      */

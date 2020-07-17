@@ -7,7 +7,6 @@ Page({
         
     },    
     btnclick_lib: function(){
-        let page_num = 1
         wx.navigateTo({
             url: '../list_f/list_f?type=1',
         })

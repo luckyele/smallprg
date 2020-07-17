@@ -1,11 +1,11 @@
 
 <view class="main_content">    
-    <view  class="facility_name">{{list.facility_name}}</view>
+    <view  class="facility_name">{{facility_name}}</view>
     <view class="image">
-        <image mode="scaleToFill" src="{{list.src}}"></image>
+        <image mode="scaleToFill" src="{{src}}"></image>
     </view>
     <view class="substract">
-        <view class="prag">{{list.content}}</view>
+        <view class="prag">{{content}}</view>
     </view>
 <view class="substract_buttom">来源：安徽文化云</view>
     
