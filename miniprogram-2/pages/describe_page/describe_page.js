@@ -15,11 +15,11 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad:function (options) {
+        console.info(options);
         let that = this;
         let host = 'http://127.0.0.1:80/';
-        console.info(options.id);
         wx.request({           
-          url: 'http://127.0.0.1:80/'+options.id+'.json',
+          url: 'http://127.0.0.1:80/'+options.name+'.json',
           data:{},
           method:'GET',
           success:function(res){

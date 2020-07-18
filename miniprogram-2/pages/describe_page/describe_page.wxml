@@ -5,7 +5,7 @@
         <image mode="scaleToFill" src="{{src}}"></image>
     </view>
     <view class="substract">
-        <view class="prag">{{content}}</view>
+        <view class="prag" wx:for="{{content}}" wx:key='index'>{{item}}</view>
     </view>
 <view class="substract_buttom">来源：安徽文化云</view>
     
