@@ -10,24 +10,24 @@
     <swiper>　　
         <swiper-item style="background:#ccc">
             <scroll-view scroll-y='true' duration='100' class="libs">
-                <view class="libs_item" wx:for="{{libs}}" bindtap="goto_detial_lib" data-index="{{index}}">{{item.name}}</view>
+                <view class="f_item" wx:for="{{libs}}" bindtap="goto_detial_lib" data-index="{{index}}">{{item.name}}</view>
             </scroll-view>
         </swiper-item>　
         　
         <swiper-item style="background:#ddd">
              <scroll-view scroll-y='true' duration='100' class="mass_centers">
-                <view class="mass_centers_item" wx:for="{{mass_centers}}" bindtap="goto_detial_mass" data-index="{{index}}">{{item.name}}</view>
+                <view class="f_item" wx:for="{{mass_centers}}" bindtap="goto_detial_mass" data-index="{{index}}">{{item.name}}</view>
             </scroll-view>
         </swiper-item>　　
 
         <swiper-item style="background:#eee">
             <scroll-view scroll-y='true' duration='100' class="mzms">
-                <view class="mzms_item" wx:for="{{mzms}}" bindtap="goto_detial_mzm" data-index="{{index}}">{{item.name}}</view>
+                <view class="f_item" wx:for="{{mzms}}" bindtap="goto_detial_mzm" data-index="{{index}}">{{item.name}}</view>
             </scroll-view>
         </swiper-item>
         <swiper-item style="background:#eee">
             <scroll-view scroll-y='true' duration='100' class="glrs">
-                <view class="glrs_item" wx:for="{{glrs}}" bindtap="goto_detial_glr" data-index="{{index}}">{{item.name}}</view>
+                <view class="f_item" wx:for="{{glrs}}" bindtap="goto_detial_glr" data-index="{{index}}">{{item.name}}</view>
             </scroll-view>
         </swiper-item>
     </swiper>

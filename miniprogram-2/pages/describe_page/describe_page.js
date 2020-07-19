@@ -19,7 +19,7 @@ Page({
         let that = this;
         let host = 'http://127.0.0.1:8080/';
         wx.request({           
-          url: 'http://127.0.0.1:8080/'+options.name+'.json',
+          url: 'http://127.0.0.1:8080/' + options.name + '.json',
           data:{},
           method:'GET',
           success:function(res){
