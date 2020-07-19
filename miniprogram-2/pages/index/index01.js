@@ -45,6 +45,7 @@ Page({
             {name:"马鞍山市文化馆",},
             {name:"芜湖市文化馆",},
             {name:"铜陵市文化馆",},
+            {name:"铜陵市铜都文化馆",},
             {name:"池州市文化馆",},
             {name:"宣城市文化馆",},
             {name:"安庆市文化馆",},
@@ -81,7 +82,6 @@ Page({
         wx.navigateTo({
           url: '../describe_page/describe_page?name='+this.data.facitilty_name
         }) 
-        
     },
     
     goto_detial_mass: function(e){
