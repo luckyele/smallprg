@@ -1,4 +1,7 @@
 /* pages/main/main.wxss */
+.page{
+    background-color: #d4d3d3;
+}
 .facility_name{
     text-align: center;
     font-size: 20px;    

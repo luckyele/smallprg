@@ -1,36 +1,37 @@
 <!--pages/index/index01.wxml-->
 <view class="tab">
-    <view class="tab-item" bindtap="changeItem" data-item="0">图</view>
-    <view class="tab-item" bindtap="changeItem" data-item="1">文</view> 
-    <view class="tab-item" bindtap="changeItem" data-item="2">博</view> 
-    <view class="tab-item" bindtap="changeItem" data-item="3">美</view>
+    <view class="tab-item {{tab==0?'active':''}}" bindtap="change_item" data-item="0">图书馆</view>
+    <view class="tab-item {{tab==1?'active':''}}" bindtap="change_item" data-item="1">文化馆</view> 
+    <view class="tab-item {{tab==2?'active':''}}" bindtap="change_item" data-item="2">博物馆</view> 
+    <view class="tab-item {{tab==3?'active':''}}" bindtap="change_item" data-item="3">美术馆</view>
 </view>
 
 <view class="content">
-    <swiper>　　
+    <swiper current="{{item}}" bindchange="change_swipter">　　
         <swiper-item style="background:#ccc">
             <scroll-view scroll-y='true' duration='100' class="libs">
-                <view class="f_item" wx:for="{{libs}}" bindtap="goto_detial_lib" data-index="{{index}}">{{item.name}}</view>
+                <view class="f_item" wx:for="{{libs}}" wx:key="index"  bindtap="goto_detial_lib" data-index="{{index}}">{{item.name}}</view>
             </scroll-view>
         </swiper-item>　
         　
         <swiper-item style="background:#ddd">
              <scroll-view scroll-y='true' duration='100' class="mass_centers">
-                <view class="f_item" wx:for="{{mass_centers}}" bindtap="goto_detial_mass" data-index="{{index}}">{{item.name}}</view>
+                <view class="f_item" wx:for="{{mass_centers}}" wx:key="index"  bindtap="goto_detial_mass" data-index="{{index}}">{{item.name}}</view>
             </scroll-view>
         </swiper-item>　　
 
         <swiper-item style="background:#eee">
             <scroll-view scroll-y='true' duration='100' class="mzms">
-                <view class="f_item" wx:for="{{mzms}}" bindtap="goto_detial_mzm" data-index="{{index}}">{{item.name}}</view>
+                <view class="f_item" wx:for="{{mzms}}" wx:key="index"  bindtap="goto_detial_mzm" data-index="{{index}}">{{item.name}}</view>
             </scroll-view>
         </swiper-item>
+        
         <swiper-item style="background:#eee">
             <scroll-view scroll-y='true' duration='100' class="glrs">
-                <view class="f_item" wx:for="{{glrs}}" bindtap="goto_detial_glr" data-index="{{index}}">{{item.name}}</view>
+                <view class="f_item" wx:for="{{glrs}}" wx:key="index"  bindtap="goto_detial_glr" data-index="{{index}}">{{item.name}}</view>
             </scroll-view>
         </swiper-item>
     </swiper>
 </view>
 
-<view class="buttom">2020@X'd</view>
+<view class="buttom">2020 @ X'd</view>
